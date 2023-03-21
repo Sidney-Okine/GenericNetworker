@@ -1,0 +1,2404 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenericNetworker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Requester",
+        "printedName": "Requester",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Requester",
+                "printedName": "GenericNetworker.Requester",
+                "usr": "s:16GenericNetworker9RequesterC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker9RequesterC6sharedACvpZ",
+            "mangledName": "$s16GenericNetworker9RequesterC6sharedACvpZ",
+            "moduleName": "GenericNetworker",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Requester",
+                    "printedName": "GenericNetworker.Requester",
+                    "usr": "s:16GenericNetworker9RequesterC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker9RequesterC6sharedACvgZ",
+                "mangledName": "$s16GenericNetworker9RequesterC6sharedACvgZ",
+                "moduleName": "GenericNetworker",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Requester",
+                "printedName": "GenericNetworker.Requester",
+                "usr": "s:16GenericNetworker9RequesterC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker9RequesterCACycfc",
+            "mangledName": "$s16GenericNetworker9RequesterCACycfc",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeRequest",
+            "printedName": "makeRequest(to:urlEndPoint:httpMethod:customBody:headers:additionalHttpHeaders:expecting:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "httpMethods",
+                "printedName": "GenericNetworker.httpMethods",
+                "usr": "s:16GenericNetworker11httpMethodsO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenericNetworker.httpHeaders?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "httpHeaders",
+                    "printedName": "GenericNetworker.httpHeaders",
+                    "usr": "s:16GenericNetworker11httpHeadersV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_0_0?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_0?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenericNetworker9RequesterC11makeRequest2to11urlEndPoint10httpMethod10customBody7headers21additionalHttpHeaders9expecting10completionySS_SSAA0J7MethodsOSDySSypGSgAA0jQ0VSgSDyS2SGSgxmyxSg_s5Error_pSgtctSeRzSERzlF",
+            "mangledName": "$s16GenericNetworker9RequesterC11makeRequest2to11urlEndPoint10httpMethod10customBody7headers21additionalHttpHeaders9expecting10completionySS_SSAA0J7MethodsOSDySSypGSgAA0jQ0VSgSDyS2SGSgxmyxSg_s5Error_pSgtctSeRzSERzlF",
+            "moduleName": "GenericNetworker",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16GenericNetworker9RequesterC",
+        "mangledName": "$s16GenericNetworker9RequesterC",
+        "moduleName": "GenericNetworker",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "errorResponse",
+            "printedName": "errorResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.NetworkError.Type) -> GenericNetworker.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "GenericNetworker.NetworkError",
+                    "usr": "s:16GenericNetworker12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GenericNetworker.NetworkError",
+                        "usr": "s:16GenericNetworker12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker12NetworkErrorO13errorResponseyA2CmF",
+            "mangledName": "$s16GenericNetworker12NetworkErrorO13errorResponseyA2CmF",
+            "moduleName": "GenericNetworker"
+          },
+          {
+            "kind": "Var",
+            "name": "errorResponseCode",
+            "printedName": "errorResponseCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.NetworkError.Type) -> (Swift.Int) -> GenericNetworker.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> GenericNetworker.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GenericNetworker.NetworkError",
+                        "usr": "s:16GenericNetworker12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GenericNetworker.NetworkError",
+                        "usr": "s:16GenericNetworker12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker12NetworkErrorO17errorResponseCodeyACSicACmF",
+            "mangledName": "$s16GenericNetworker12NetworkErrorO17errorResponseCodeyACSicACmF",
+            "moduleName": "GenericNetworker"
+          },
+          {
+            "kind": "Var",
+            "name": "dataError",
+            "printedName": "dataError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.NetworkError.Type) -> GenericNetworker.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "GenericNetworker.NetworkError",
+                    "usr": "s:16GenericNetworker12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "GenericNetworker.NetworkError",
+                        "usr": "s:16GenericNetworker12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker12NetworkErrorO04dataD0yA2CmF",
+            "mangledName": "$s16GenericNetworker12NetworkErrorO04dataD0yA2CmF",
+            "moduleName": "GenericNetworker"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16GenericNetworker12NetworkErrorO",
+        "mangledName": "$s16GenericNetworker12NetworkErrorO",
+        "moduleName": "GenericNetworker",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "httpMethods",
+        "printedName": "httpMethods",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "GET",
+            "printedName": "GET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.httpMethods.Type) -> GenericNetworker.httpMethods",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "httpMethods",
+                    "printedName": "GenericNetworker.httpMethods",
+                    "usr": "s:16GenericNetworker11httpMethodsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.httpMethods.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "httpMethods",
+                        "printedName": "GenericNetworker.httpMethods",
+                        "usr": "s:16GenericNetworker11httpMethodsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker11httpMethodsO3GETyA2CmF",
+            "mangledName": "$s16GenericNetworker11httpMethodsO3GETyA2CmF",
+            "moduleName": "GenericNetworker"
+          },
+          {
+            "kind": "Var",
+            "name": "POST",
+            "printedName": "POST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.httpMethods.Type) -> GenericNetworker.httpMethods",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "httpMethods",
+                    "printedName": "GenericNetworker.httpMethods",
+                    "usr": "s:16GenericNetworker11httpMethodsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.httpMethods.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "httpMethods",
+                        "printedName": "GenericNetworker.httpMethods",
+                        "usr": "s:16GenericNetworker11httpMethodsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker11httpMethodsO4POSTyA2CmF",
+            "mangledName": "$s16GenericNetworker11httpMethodsO4POSTyA2CmF",
+            "moduleName": "GenericNetworker"
+          },
+          {
+            "kind": "Var",
+            "name": "PATCH",
+            "printedName": "PATCH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.httpMethods.Type) -> GenericNetworker.httpMethods",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "httpMethods",
+                    "printedName": "GenericNetworker.httpMethods",
+                    "usr": "s:16GenericNetworker11httpMethodsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.httpMethods.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "httpMethods",
+                        "printedName": "GenericNetworker.httpMethods",
+                        "usr": "s:16GenericNetworker11httpMethodsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker11httpMethodsO5PATCHyA2CmF",
+            "mangledName": "$s16GenericNetworker11httpMethodsO5PATCHyA2CmF",
+            "moduleName": "GenericNetworker"
+          },
+          {
+            "kind": "Var",
+            "name": "PUT",
+            "printedName": "PUT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.httpMethods.Type) -> GenericNetworker.httpMethods",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "httpMethods",
+                    "printedName": "GenericNetworker.httpMethods",
+                    "usr": "s:16GenericNetworker11httpMethodsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.httpMethods.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "httpMethods",
+                        "printedName": "GenericNetworker.httpMethods",
+                        "usr": "s:16GenericNetworker11httpMethodsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker11httpMethodsO3PUTyA2CmF",
+            "mangledName": "$s16GenericNetworker11httpMethodsO3PUTyA2CmF",
+            "moduleName": "GenericNetworker"
+          },
+          {
+            "kind": "Var",
+            "name": "DELETE",
+            "printedName": "DELETE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenericNetworker.httpMethods.Type) -> GenericNetworker.httpMethods",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "httpMethods",
+                    "printedName": "GenericNetworker.httpMethods",
+                    "usr": "s:16GenericNetworker11httpMethodsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenericNetworker.httpMethods.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "httpMethods",
+                        "printedName": "GenericNetworker.httpMethods",
+                        "usr": "s:16GenericNetworker11httpMethodsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16GenericNetworker11httpMethodsO6DELETEyA2CmF",
+            "mangledName": "$s16GenericNetworker11httpMethodsO6DELETEyA2CmF",
+            "moduleName": "GenericNetworker"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenericNetworker.httpMethods?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "httpMethods",
+                    "printedName": "GenericNetworker.httpMethods",
+                    "usr": "s:16GenericNetworker11httpMethodsO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker11httpMethodsO8rawValueACSgSS_tcfc",
+            "mangledName": "$s16GenericNetworker11httpMethodsO8rawValueACSgSS_tcfc",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker11httpMethodsO8rawValueSSvp",
+            "mangledName": "$s16GenericNetworker11httpMethodsO8rawValueSSvp",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpMethodsO8rawValueSSvg",
+                "mangledName": "$s16GenericNetworker11httpMethodsO8rawValueSSvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16GenericNetworker11httpMethodsO",
+        "mangledName": "$s16GenericNetworker11httpMethodsO",
+        "moduleName": "GenericNetworker",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "httpHeaders",
+        "printedName": "httpHeaders",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ContentType",
+            "printedName": "ContentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker11httpHeadersV11ContentTypeSSSgvp",
+            "mangledName": "$s16GenericNetworker11httpHeadersV11ContentTypeSSSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV11ContentTypeSSSgvg",
+                "mangledName": "$s16GenericNetworker11httpHeadersV11ContentTypeSSSgvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV11ContentTypeSSSgvs",
+                "mangledName": "$s16GenericNetworker11httpHeadersV11ContentTypeSSSgvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV11ContentTypeSSSgvM",
+                "mangledName": "$s16GenericNetworker11httpHeadersV11ContentTypeSSSgvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Accept",
+            "printedName": "Accept",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker11httpHeadersV6AcceptSSSgvp",
+            "mangledName": "$s16GenericNetworker11httpHeadersV6AcceptSSSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV6AcceptSSSgvg",
+                "mangledName": "$s16GenericNetworker11httpHeadersV6AcceptSSSgvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV6AcceptSSSgvs",
+                "mangledName": "$s16GenericNetworker11httpHeadersV6AcceptSSSgvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV6AcceptSSSgvM",
+                "mangledName": "$s16GenericNetworker11httpHeadersV6AcceptSSSgvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Authorization",
+            "printedName": "Authorization",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenericNetworker.AuthorizationTypes?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationTypes",
+                    "printedName": "GenericNetworker.AuthorizationTypes",
+                    "usr": "s:16GenericNetworker18AuthorizationTypesV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvp",
+            "mangledName": "$s16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenericNetworker.AuthorizationTypes?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationTypes",
+                        "printedName": "GenericNetworker.AuthorizationTypes",
+                        "usr": "s:16GenericNetworker18AuthorizationTypesV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvg",
+                "mangledName": "$s16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenericNetworker.AuthorizationTypes?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationTypes",
+                        "printedName": "GenericNetworker.AuthorizationTypes",
+                        "usr": "s:16GenericNetworker18AuthorizationTypesV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvs",
+                "mangledName": "$s16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvM",
+                "mangledName": "$s16GenericNetworker11httpHeadersV13AuthorizationAA0E5TypesVSgvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(contentType:accept:authorization:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "httpHeaders",
+                "printedName": "GenericNetworker.httpHeaders",
+                "usr": "s:16GenericNetworker11httpHeadersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenericNetworker.AuthorizationTypes?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationTypes",
+                    "printedName": "GenericNetworker.AuthorizationTypes",
+                    "usr": "s:16GenericNetworker18AuthorizationTypesV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker11httpHeadersV11contentType6accept13authorizationACSSSg_AgA18AuthorizationTypesVSgtcfc",
+            "mangledName": "$s16GenericNetworker11httpHeadersV11contentType6accept13authorizationACSSSg_AgA18AuthorizationTypesVSgtcfc",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "httpHeaders",
+                "printedName": "GenericNetworker.httpHeaders",
+                "usr": "s:16GenericNetworker11httpHeadersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker11httpHeadersV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16GenericNetworker11httpHeadersV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenericNetworker11httpHeadersV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16GenericNetworker11httpHeadersV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16GenericNetworker11httpHeadersV",
+        "mangledName": "$s16GenericNetworker11httpHeadersV",
+        "moduleName": "GenericNetworker",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthorizationTypes",
+        "printedName": "AuthorizationTypes",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bearerToken",
+            "printedName": "bearerToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvp",
+            "mangledName": "$s16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvg",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvs",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvM",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV11bearerTokenSSSgvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "basicAuthHeader",
+            "printedName": "basicAuthHeader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenericNetworker.Params?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Params",
+                    "printedName": "GenericNetworker.Params",
+                    "usr": "s:16GenericNetworker6ParamsV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvp",
+            "mangledName": "$s16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenericNetworker.Params?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Params",
+                        "printedName": "GenericNetworker.Params",
+                        "usr": "s:16GenericNetworker6ParamsV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvg",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenericNetworker.Params?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Params",
+                        "printedName": "GenericNetworker.Params",
+                        "usr": "s:16GenericNetworker6ParamsV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvs",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvM",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV15basicAuthHeaderAA6ParamsVSgvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenAuthHeader",
+            "printedName": "tokenAuthHeader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvp",
+            "mangledName": "$s16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvg",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvs",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvM",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV15tokenAuthHeaderSSSgvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker18AuthorizationTypesV6apiKeySSSgvp",
+            "mangledName": "$s16GenericNetworker18AuthorizationTypesV6apiKeySSSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV6apiKeySSSgvg",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV6apiKeySSSgvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV6apiKeySSSgvs",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV6apiKeySSSgvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV6apiKeySSSgvM",
+                "mangledName": "$s16GenericNetworker18AuthorizationTypesV6apiKeySSSgvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bearerToken:basicAuthHeader:tokenAuthHeader:apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthorizationTypes",
+                "printedName": "GenericNetworker.AuthorizationTypes",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenericNetworker.Params?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Params",
+                    "printedName": "GenericNetworker.Params",
+                    "usr": "s:16GenericNetworker6ParamsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker18AuthorizationTypesV11bearerToken15basicAuthHeader05tokenhI06apiKeyACSSSg_AA6ParamsVSgA2Htcfc",
+            "mangledName": "$s16GenericNetworker18AuthorizationTypesV11bearerToken15basicAuthHeader05tokenhI06apiKeyACSSSg_AA6ParamsVSgA2Htcfc",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthorizationTypes",
+                "printedName": "GenericNetworker.AuthorizationTypes",
+                "usr": "s:16GenericNetworker18AuthorizationTypesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker18AuthorizationTypesV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16GenericNetworker18AuthorizationTypesV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenericNetworker18AuthorizationTypesV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16GenericNetworker18AuthorizationTypesV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16GenericNetworker18AuthorizationTypesV",
+        "mangledName": "$s16GenericNetworker18AuthorizationTypesV",
+        "moduleName": "GenericNetworker",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Params",
+        "printedName": "Params",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "username",
+            "printedName": "username",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker6ParamsV8usernameSSvp",
+            "mangledName": "$s16GenericNetworker6ParamsV8usernameSSvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker6ParamsV8usernameSSvg",
+                "mangledName": "$s16GenericNetworker6ParamsV8usernameSSvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker6ParamsV8usernameSSvs",
+                "mangledName": "$s16GenericNetworker6ParamsV8usernameSSvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker6ParamsV8usernameSSvM",
+                "mangledName": "$s16GenericNetworker6ParamsV8usernameSSvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "password",
+            "printedName": "password",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker6ParamsV8passwordSSvp",
+            "mangledName": "$s16GenericNetworker6ParamsV8passwordSSvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker6ParamsV8passwordSSvg",
+                "mangledName": "$s16GenericNetworker6ParamsV8passwordSSvg",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker6ParamsV8passwordSSvs",
+                "mangledName": "$s16GenericNetworker6ParamsV8passwordSSvs",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker6ParamsV8passwordSSvM",
+                "mangledName": "$s16GenericNetworker6ParamsV8passwordSSvM",
+                "moduleName": "GenericNetworker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(username:password:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Params",
+                "printedName": "GenericNetworker.Params",
+                "usr": "s:16GenericNetworker6ParamsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker6ParamsV8username8passwordACSS_SStcfc",
+            "mangledName": "$s16GenericNetworker6ParamsV8username8passwordACSS_SStcfc",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "base64Encoded",
+            "printedName": "base64Encoded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenericNetworker6ParamsV13base64EncodedSSSgvp",
+            "mangledName": "$s16GenericNetworker6ParamsV13base64EncodedSSSgvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenericNetworker6ParamsV13base64EncodedSSSgvg",
+                "mangledName": "$s16GenericNetworker6ParamsV13base64EncodedSSSgvg",
+                "moduleName": "GenericNetworker",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Params",
+                "printedName": "GenericNetworker.Params",
+                "usr": "s:16GenericNetworker6ParamsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenericNetworker6ParamsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16GenericNetworker6ParamsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenericNetworker6ParamsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16GenericNetworker6ParamsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GenericNetworker",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16GenericNetworker6ParamsV",
+        "mangledName": "$s16GenericNetworker6ParamsV",
+        "moduleName": "GenericNetworker",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Encodable",
+        "printedName": "Encodable",
+        "children": [
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:SE16GenericNetworkerEyypSgSScip",
+            "mangledName": "$sSE16GenericNetworkerEyypSgSScip",
+            "moduleName": "GenericNetworker",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<Self where Self : Swift.Encodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SE16GenericNetworkerEyypSgSScig",
+                "mangledName": "$sSE16GenericNetworkerEyypSgSScig",
+                "moduleName": "GenericNetworker",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
+                "sugared_genericSig": "<Self where Self : Swift.Encodable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dictionary",
+            "printedName": "dictionary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SE16GenericNetworkerE10dictionarySDySSypGvp",
+            "mangledName": "$sSE16GenericNetworkerE10dictionarySDySSypGvp",
+            "moduleName": "GenericNetworker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SE16GenericNetworkerE10dictionarySDySSypGvg",
+                "mangledName": "$sSE16GenericNetworkerE10dictionarySDySSypGvg",
+                "moduleName": "GenericNetworker",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
+                "sugared_genericSig": "<Self where Self : Swift.Encodable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:SE",
+        "mangledName": "$sSE",
+        "moduleName": "Swift",
+        "isExternal": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "Dictionary",
+      "offset": 507,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3885,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3907,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3931,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3954,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3978,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3885,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3907,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3931,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3954,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 3978,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 4290,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/mister_okine\/Desktop\/GenericNetworker\/GenericNetworker\/GenericNetworker.swift",
+      "kind": "StringLiteral",
+      "offset": 4328,
+      "length": 18,
+      "value": "\"application\/json\""
+    }
+  ]
+}

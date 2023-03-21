@@ -1,0 +1,72 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GenericNetworker
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import GenericNetworker
+import Swift
+import _Concurrency
+import _StringProcessing
+public class Requester {
+  public static let shared: GenericNetworker.Requester
+  public init()
+  public func makeRequest<T>(to baseUrl: Swift.String, urlEndPoint: Swift.String, httpMethod: GenericNetworker.httpMethods, customBody: GenericNetworker.httpRequestBody? = nil, headers: GenericNetworker.httpHeaders?, additionalHttpHeaders: GenericNetworker.postHeaders? = [:], expecting: T.Type, completion: @escaping (T?, Swift.Error?) -> Swift.Void) where T : Swift.Decodable, T : Swift.Encodable
+  @objc deinit
+}
+public enum NetworkError : Swift.Error {
+  case errorResponse
+  case errorResponseCode(Swift.Int)
+  case dataError
+}
+public enum httpMethods : Swift.String {
+  case GET
+  case POST
+  case PATCH
+  case PUT
+  case DELETE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public typealias httpRequestBody = [Swift.String : Any]
+public typealias postHeaders = [Swift.String : Swift.String]
+public struct httpHeaders : Swift.Codable {
+  public var ContentType: Swift.String?
+  public var Accept: Swift.String?
+  public var Authorization: GenericNetworker.AuthorizationTypes?
+  public init(contentType: Swift.String? = "application/json", accept: Swift.String? = "application/json", authorization: GenericNetworker.AuthorizationTypes? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct AuthorizationTypes : Swift.Codable {
+  public var bearerToken: Swift.String?
+  public var basicAuthHeader: GenericNetworker.Params?
+  public var tokenAuthHeader: Swift.String?
+  public var apiKey: Swift.String?
+  public init(bearerToken: Swift.String?, basicAuthHeader: GenericNetworker.Params? = nil, tokenAuthHeader: Swift.String? = nil, apiKey: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Params : Swift.Codable {
+  public var username: Swift.String
+  public var password: Swift.String
+  public init(username: Swift.String, password: Swift.String)
+  public var base64Encoded: Swift.String? {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Swift.Encodable {
+  public subscript(key: Swift.String) -> Any? {
+    get
+  }
+  public var dictionary: [Swift.String : Any] {
+    get
+  }
+}
+extension GenericNetworker.httpMethods : Swift.Equatable {}
+extension GenericNetworker.httpMethods : Swift.Hashable {}
+extension GenericNetworker.httpMethods : Swift.RawRepresentable {}

@@ -1,0 +1,11 @@
+framework module GenericNetworker {
+  umbrella header "GenericNetworker.h"
+
+  export *
+  module * { export * }
+}
+
+module GenericNetworker.Swift {
+  header "GenericNetworker-Swift.h"
+  requires objc
+}
